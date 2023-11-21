@@ -1,0 +1,137 @@
+*, *:hover {
+  cursor: url("../assets/cursor/cursor.cur"), default;
+}
+
+.bg-video {
+  position: absolute;
+  z-index: -2;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+}
+
+.bg-video::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.container {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  height: 100vh;
+}
+
+.container-left {
+  width: 30%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container-right {
+  width: 69%;
+}
+
+.score-box {
+  width: 100%;
+  text-align: center;
+
+  background: #fff;
+  padding: 30px;
+}
+
+.frame {
+  border: 3px solid #000;
+  border-radius: 5px;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 6rem;
+  width: 100%;
+
+  background-color: #fff;
+  padding: 1rem;
+}
+
+#card-name {
+  font-size: 0.8rem;
+}
+
+#card-type {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.card-box-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.3rem;
+}
+
+.card-versus-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+  height: 300px;
+  padding-top: 0.2rem;
+}
+
+.versus-top,
+.versus-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#next-duel {
+  display: block;
+  visibility: hidden;
+}
+
+.card-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 9rem;
+  width: 100%;
+}
+
+.card-infield {
+  height: 11.2rem;
+  width: 8rem;
+  border: 1px solid #FFF;
+  border-radius: 8px;
+}
+
+
+.card {
+  transition: transform .3s;
+}
+
+
+.card:hover {
+  transform: scale(1.1);
+}

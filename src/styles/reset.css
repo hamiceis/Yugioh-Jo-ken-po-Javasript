@@ -1,0 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "Press Start 2P", cursive;
+  -webkit-font-smoothing: antialiased;
+}
+
